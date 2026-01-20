@@ -1,39 +1,42 @@
 # InsightPress: Full-Stack Publishing Platform
 
 ## Overview
-InsightPress is a full-stack project that simulates a modern publishing workflow:
-users can create, edit, and publish posts, and the platform supports clean data
-models for analytics and future AI features like summarization and auto-tagging.
+InsightPress is a full-stack project that simulates a modern content publishing
+platform. It demonstrates how a backend API can manage posts and expose clean
+endpoints that are ready for frontend integration and future AI features.
+
+This project is designed as an internship-level full-stack application that
+focuses on clear architecture, readable code, and practical execution.
 
 ---
 
 ## What This Project Does
-- User authentication (login/signup)
-- Create / edit / delete posts (CRUD)
-- Draft vs published posts
-- Basic search and filtering (by title/tags)
-- Clean API structure (ready for deployment)
+- Provides a backend API for managing posts
+- Supports creating and listing content
+- Uses a clean and simple data model
+- Exposes interactive API documentation
+- Ready for frontend and database integration
 
 ---
 
-## Tech Stack (suggested)
-Frontend: React / Next.js  
-Backend: FastAPI or Node.js (Express)  
-Database: PostgreSQL (or SQLite for local demo)
+## Tech Stack
+- Backend: Python (FastAPI)
+- API Server: Uvicorn
+- Data Model: Pydantic
+- Architecture: REST-style API
 
 ---
 
-## Planned Structure
-- `apps/web/` – frontend
-- `apps/api/` – backend
-- `docs/` – architecture + API docs
-- `scripts/` – setup helpers
+## Project Structure
+- `apps/api/` – Backend API source code
+- `apps/web/` – Frontend placeholder
+- `docs/` – Architecture and documentation
+- `scripts/` – Helper and setup scripts
 
 ---
 
-## Future Enhancements
-- Role-based access (author/editor/admin)
-- Comments + moderation
-- Analytics dashboard
-- AI: auto-summary, auto-tags, SEO suggestions
+## How to Run (Local Demo)
 
+### Step 1: Install dependencies
+```bash
+pip install fastapi uvicorn
